@@ -16,6 +16,9 @@ We're looking to tap into the deep rooted nostalgia of the 90s kids who are grow
 - Interact with friends and reminisce childhood memories
 - Fun and interactive time killer that engages friends
 
+## Domain Model & Wireframe sketches
+![domain images](https://github.com/90s-Heartthrob/mash/blob/master/IMG_20180219_113052.jpg?raw=true)
+
 ## Classic Mash
 ### Categories
 Crush, Car, Location, Job
