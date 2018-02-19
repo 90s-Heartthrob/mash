@@ -17,14 +17,14 @@ We're looking to tap into the deep rooted nostalgia of the 90s kids who are grow
 - Fun and interactive time killer that engages friends
 
 ## Domain Model & Wireframe sketches
-![domain images](https://github.com/90s-Heartthrob/mash/blob/master/IMG_20180219_113052.jpg?raw=true)
-![domain](https://github.com/90s-Heartthrob/mash/blob/master/domain%20model.jpg?raw=true)
+![domain images](https://github.com/90s-Heartthrob/mash/blob/master/img/Planning/IMG_20180219_113052.jpg?raw=true)
+![domain](https://github.com/90s-Heartthrob/mash/blob/master/img/Planning/domain%20model.jpg?raw=true)
 
 ## Design
-![img1](https://github.com/90s-Heartthrob/mash/blob/master/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.27.59%20AM.png)
-![img2](https://github.com/90s-Heartthrob/mash/blob/master/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.28.18%20AM.png)
-![img3](https://github.com/90s-Heartthrob/mash/blob/master/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.29.05%20AM.png)
-![img4](https://github.com/90s-Heartthrob/mash/blob/master/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.30.37%20AM.png)
+![img1](https://github.com/90s-Heartthrob/mash/blob/master/img/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.27.59%20AM.png)
+![img2](https://github.com/90s-Heartthrob/mash/blob/master/img/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.28.18%20AM.png)
+![img3](https://github.com/90s-Heartthrob/mash/blob/master/img/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.29.05%20AM.png)
+![img4](https://github.com/90s-Heartthrob/mash/blob/master/img/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.30.37%20AM.png)
 
 ## Classic Mash
 ### Categories
