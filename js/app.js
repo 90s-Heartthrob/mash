@@ -8,7 +8,7 @@
 
 const gameObj = {
     crush: [],
-    locaton: [],
+    location: [],
     car: [],
     job: [],
     Tally: 0,
@@ -17,12 +17,15 @@ const gameObj = {
         const form = document.querySelector('form');
         form.addEventListener('submit', function() {
             event.preventDefault();
-            const crush = this.crush1.value;
-            const location = this.location1.value;
-            const car = this.car1.value;
-            const job = this.job1.value;
-            console.log(crush, location, car, job);
-        
+            const crushArray = [this.crush1.value, this.crush2.value, this.crush3.value];
+            const locationArray = [this.location1.value, this.location2.value, this.location3.value];
+            const carArray = [this.car1.value, this.car2.value, this.car3.value];
+            const jobArray = [this.job1.value, this.job2.value, this.job3.value];
+            console.log(crushArray, locationArray, carArray, jobArray);
+            gameObj.crush.push(crushArray);
+            gameObj.location.push(locationArray);
+            gameObj.car.push(carArray);
+            gameObj.job.push(jobArray);
         });
     },
 
