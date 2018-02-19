@@ -1,3 +1,5 @@
+'use strict';
+
 crush = ['crush1', 'crush2', 'crush3']
 location = ['location1', 'location2', 'location3']
 car = ['uInput1', 'uInput2', 'uInput3',]
