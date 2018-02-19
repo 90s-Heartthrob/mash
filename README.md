@@ -18,6 +18,7 @@ We're looking to tap into the deep rooted nostalgia of the 90s kids who are grow
 
 ## Domain Model & Wireframe sketches
 ![domain images](https://github.com/90s-Heartthrob/mash/blob/master/IMG_20180219_113052.jpg?raw=true)
+![domain](https://github.com/90s-Heartthrob/mash/blob/master/domain%20model.jpg?raw=true)
 
 ## Design
 ![img1](https://github.com/90s-Heartthrob/mash/blob/master/Idea%20Images/Screen%20Shot%202018-02-19%20at%2011.27.59%20AM.png)
