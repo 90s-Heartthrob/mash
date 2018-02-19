@@ -1,7 +1,7 @@
-# 90s Heartthrob
+# 90's Heartthrob
 
 ## Team Members
-Henrique Oliveira, Stephanie Smith
+Henrique Oliveira, Stephanie Smith, Spencer Thode
 
 ## Project Pitch
 
@@ -15,3 +15,7 @@ We're looking to tap into the deep rooted nostalgia of the 90s kids who are grow
 - Easy to use and access without need of primitive materials
 - Interact with friends and reminisce childhood memories
 - Fun and interactive time killer that engages friends
+
+## Classic Mash
+### Categories
+Crush, Car, Location, Job
