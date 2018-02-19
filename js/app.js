@@ -1,16 +1,9 @@
 'use strict';
 
-<<<<<<< HEAD
-crush = ['crush1', 'crush2', 'crush3']
-location = ['location1', 'location2', 'location3']
-car = ['uInput1', 'uInput2', 'uInput3',]
-job = ['uInput1', 'uInput2', 'uInput3']
-=======
 // const crush = ['crush1', 'crush2', 'crush3'];
 // const location = ['location1', 'location2', 'location3'];
 // const car = ['uInput1', 'uInput2', 'uInput3',];
 // const job = ['uInput1', 'uInput2', 'uInput3'];
->>>>>>> f5380519ac3734f676b356d55bf37a07cc0213dc
 
 
 const gameObj = {
@@ -50,4 +43,3 @@ const gameObj = {
 
 
 gameObj.start();
-
