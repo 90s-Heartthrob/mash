@@ -96,18 +96,18 @@ const gameObj = {
 
 
 
-gameObj.start();
+// gameObj.start();
 
-const testArray = ['M', 'A', 'S', 'H', 'C1', 'C2', 'C3', 'L1', 'L2', 'L3', 'V1', 'V2', 'V3', 'J1', 'J2', 'J3'];
+// const testArray = ['M', 'A', 'S', 'H', 'C1', 'C2', 'C3', 'L1', 'L2', 'L3', 'V1', 'V2', 'V3', 'J1', 'J2', 'J3'];
 
-function cross () {
-    const num = 5;
-    for (let i = 1; i < 4; i++) {
-        // let i = 1;
-        const value = i * num - i;
-        testArray.splice(value , 1);
-    };
-    console.log(testArray);
-};
+// function cross () {
+//     const num = 5;
+//     for (let i = 1; i > testArray.length; i++) {
+//         let i = 1;
+//         const value = i * num - i;
+//         testArray.splice(value , 1);
+//     };
+//     console.log(testArray);
+// };
 
-cross();
+// cross();
