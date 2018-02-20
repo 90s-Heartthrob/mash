@@ -7,11 +7,13 @@
 
 
 const gameObj = {
+    masterArray: ['M', 'A', 'S', 'H'],
+    mashArray: ['M', 'A', 'S', 'H'],
     crush: [],
     location: [],
     car: [],
     job: [],
-    Tally: 0,
+    tally: 3,
 
     start: function () {
         const form = document.querySelector('form');
@@ -24,12 +26,62 @@ const gameObj = {
 
             for (let i = 0; i < crushArray.length; i++) {
                 gameObj.crush.push(crushArray[i]);
+                gameObj.masterArray.push(crushArray[i]);
                 gameObj.location.push(locationArray[i]);
+                gameObj.masterArray.push(locationArray[i]);
                 gameObj.car.push(carArray[i]);
+                gameObj.masterArray.push(carArray[i]);
                 gameObj.job.push(jobArray[i]);
+                gameObj.masterArray.push(jobArray[i]);
             }
             gameObj.storeData();
+            gameObj.cross();
         });
+    },
+    cross: function () {
+        
+        let i = 1;
+        while (this.masterArray.length > 11) {
+            
+            const index = (i*this.tally)-i;
+            const crossOff = this.masterArray[index];
+            if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                const mashArrayCrossIndex = this.mashArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                this.mashArray.splice(mashArrayCrossIndex, 1);
+                console.log(this.mashArray);
+            } else if (this.crush.includes(crossOff) && this.crush.length > 1) {
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                const crushCrossIndex = this.crush.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                this.crush.splice(crushCrossIndex, 1);
+                console.log(this.crush);
+            } else if (this.location.includes(crossOff) && this.location.length > 1) {
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                const locationCrossIndex = this.location.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                this.location.splice(locationCrossIndex, 1);
+                console.log(this.location);      
+            } else if (this.car.includes(crossOff) && this.car.length > 1) {
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                const carCrossIndex = this.car.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                this.car.splice(carCrossIndex, 1);
+                console.log(this.car);
+            } else if (this.job.includes(crossOff) && this.job.length > 1) {
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                const jobCrossIndex = this.job.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                this.job.splice(jobCrossIndex, 1);
+                console.log(this.job);
+            } else {
+                
+                continue;
+            }
+            i++;
+            console.log(gameObj.masterArray);
+        }
 
     },
 
