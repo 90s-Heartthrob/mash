@@ -30,14 +30,13 @@ const gameObj = {
         });
 
     },
-    
+
     storeData: function () {
         localStorage.setItem('crushData', JSON.stringify(this.crush));
         localStorage.setItem('locationData', JSON.stringify(this.location));
         localStorage.setItem('carData', JSON.stringify(this.car));
         localStorage.setItem('jobData', JSON.stringify(this.job));
     }
-    
 };
 
 
