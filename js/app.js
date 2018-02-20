@@ -13,7 +13,7 @@ const gameObj = {
     location: [],
     car: [],
     job: [],
-    tally: 1,
+    tally: 3,
 
     start: function () {
         const form = document.querySelector('form');
@@ -35,10 +35,8 @@ const gameObj = {
         });
     },
     cross: function () {
-        
         let i = 1;
-        while (this.masterArray.length > 0) {
-            
+        while (this.masterArray.length > 0) {        
             const index = (i*this.tally)-i;
             const crossOff = this.masterArray[index];
             if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
@@ -77,10 +75,18 @@ const gameObj = {
                 this.masterArray.splice(masterArrayCrossIndex, 1);
             } else if (this.crush.length === 1) {
                 localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+                
             } else if (this.location.length === 1) {
                 localStorage.setItem('locationData', JSON.stringify(this.location[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+
             } else if (this.car.length === 1) {
                 localStorage.setItem('jobData', JSON.stringify(this.job[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
             } else {
                 continue;
             }
