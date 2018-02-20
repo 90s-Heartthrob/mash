@@ -21,23 +21,27 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-            console.log(crushArray, locationArray, carArray, jobArray);
-            gameObj.crush.push(crushArray);
-            gameObj.location.push(locationArray);
-            gameObj.car.push(carArray);
-            gameObj.job.push(jobArray);
+            
+            for (let i = 0; i < crushArray.length; i++) {
+                gameObj.crush.push(crushArray[i]);
+                gameObj.location.push(locationArray[i]);
+                gameObj.car.push(carArray[i]);
+                gameObj.job.push(jobArray[i]);
+            }
             gameObj.storeData();
         });
 
     },
-
+    
     storeData: function () {
         localStorage.setItem('crushData', JSON.stringify(this.crush));
         localStorage.setItem('locationData', JSON.stringify(this.location));
         localStorage.setItem('carData', JSON.stringify(this.car));
         localStorage.setItem('jobData', JSON.stringify(this.job));
     }
+    
 };
 
-gameObj.start();
 
+
+gameObj.start();
