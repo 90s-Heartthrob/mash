@@ -31,13 +31,13 @@ const gameObj = {
             }
             gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
             gameObj.storeData();
-            gameObj.cross();
+            // gameObj.cross();
         });
     },
     cross: function () {
         let i = 1;
-        while (this.masterArray.length > 0) {        
-            const index = (i*this.tally)-i;
+        while (this.masterArray.length > 0) {
+            const index = (i * this.tally) - i;
             const crossOff = this.masterArray[index];
             if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
@@ -56,7 +56,7 @@ const gameObj = {
                 const locationCrossIndex = this.location.indexOf(crossOff);
                 this.masterArray.splice(masterArrayCrossIndex, 1);
                 this.location.splice(locationCrossIndex, 1);
-                console.log(this.location);      
+                console.log(this.location);
             } else if (this.car.includes(crossOff) && this.car.length > 1) {
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
                 const carCrossIndex = this.car.indexOf(crossOff);
@@ -77,7 +77,7 @@ const gameObj = {
                 localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
                 this.masterArray.splice(masterArrayCrossIndex, 1);
-                
+
             } else if (this.location.length === 1) {
                 localStorage.setItem('locationData', JSON.stringify(this.location[0]));
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
@@ -95,16 +95,14 @@ const gameObj = {
         }
 
     },
-    
+
     storeData: function () {
         localStorage.setItem('crushData', JSON.stringify(this.crush));
         localStorage.setItem('locationData', JSON.stringify(this.location));
         localStorage.setItem('carData', JSON.stringify(this.car));
         localStorage.setItem('jobData', JSON.stringify(this.job));
     }
-    
+
 };
-
-
 
 gameObj.start();
