@@ -7,7 +7,7 @@
 
 
 const gameObj = {
-    masterArray: ['M', 'A', 'S', 'H'],
+    masterArray: [],
     mashArray: ['M', 'A', 'S', 'H'],
     crush: [],
     location: [],
@@ -23,17 +23,13 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-            
             for (let i = 0; i < crushArray.length; i++) {
                 gameObj.crush.push(crushArray[i]);
-                gameObj.masterArray.push(crushArray[i]);
                 gameObj.location.push(locationArray[i]);
-                gameObj.masterArray.push(locationArray[i]);
                 gameObj.car.push(carArray[i]);
-                gameObj.masterArray.push(carArray[i]);
                 gameObj.job.push(jobArray[i]);
-                gameObj.masterArray.push(jobArray[i]);
             }
+            gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
             gameObj.storeData();
             gameObj.cross();
         });
@@ -76,7 +72,6 @@ const gameObj = {
                 this.job.splice(jobCrossIndex, 1);
                 console.log(this.job);
             } else {
-                
                 continue;
             }
             i++;
