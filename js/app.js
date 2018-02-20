@@ -23,10 +23,6 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-<<<<<<< HEAD
-
-=======
->>>>>>> f063a23c673f0798c9f07223617f9076bbb47aea
             for (let i = 0; i < crushArray.length; i++) {
                 gameObj.crush.push(crushArray[i]);
                 gameObj.location.push(locationArray[i]);
@@ -35,13 +31,13 @@ const gameObj = {
             }
             gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
             gameObj.storeData();
-            gameObj.cross();
+            // gameObj.cross();
         });
     },
     cross: function () {
         let i = 1;
-        while (this.masterArray.length > 0) {        
-            const index = (i*this.tally)-i;
+        while (this.masterArray.length > 0) {
+            const index = (i * this.tally) - i;
             const crossOff = this.masterArray[index];
             if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
@@ -60,7 +56,7 @@ const gameObj = {
                 const locationCrossIndex = this.location.indexOf(crossOff);
                 this.masterArray.splice(masterArrayCrossIndex, 1);
                 this.location.splice(locationCrossIndex, 1);
-                console.log(this.location);      
+                console.log(this.location);
             } else if (this.car.includes(crossOff) && this.car.length > 1) {
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
                 const carCrossIndex = this.car.indexOf(crossOff);
@@ -81,7 +77,7 @@ const gameObj = {
                 localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
                 this.masterArray.splice(masterArrayCrossIndex, 1);
-                
+
             } else if (this.location.length === 1) {
                 localStorage.setItem('locationData', JSON.stringify(this.location[0]));
                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
@@ -109,20 +105,4 @@ const gameObj = {
 
 };
 
-
-
-// gameObj.start();
-
-// const testArray = ['M', 'A', 'S', 'H', 'C1', 'C2', 'C3', 'L1', 'L2', 'L3', 'V1', 'V2', 'V3', 'J1', 'J2', 'J3'];
-
-// function cross () {
-//     const num = 5;
-//     for (let i = 1; i > testArray.length; i++) {
-//         let i = 1;
-//         const value = i * num - i;
-//         testArray.splice(value , 1);
-//     };
-//     console.log(testArray);
-// };
-
-// cross();
+gameObj.start();
