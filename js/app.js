@@ -39,7 +39,5 @@ const gameObj = {
     }
 };
 
-
-
 gameObj.start();
 
