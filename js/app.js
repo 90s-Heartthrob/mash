@@ -21,11 +21,13 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-            console.log(crushArray, locationArray, carArray, jobArray);
-            gameObj.crush.push(crushArray);
-            gameObj.location.push(locationArray);
-            gameObj.car.push(carArray);
-            gameObj.job.push(jobArray);
+            
+            for (let i = 0; i < crushArray.length; i++) {
+                gameObj.crush.push(crushArray[i]);
+                gameObj.location.push(locationArray[i]);
+                gameObj.car.push(carArray[i]);
+                gameObj.job.push(jobArray[i]);
+            }
             gameObj.storeData();
         });
 
