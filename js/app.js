@@ -30,7 +30,7 @@ const gameObj = {
             }
 
         });
-
+        gameObj.storeData();
        
     },
     
