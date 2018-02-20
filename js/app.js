@@ -28,9 +28,10 @@ const gameObj = {
                 gameObj.car.push(carArray[i]);
                 gameObj.job.push(jobArray[i]);
             }
-            gameObj.storeData();
+
         });
 
+       
     },
     
     storeData: function () {
@@ -39,8 +40,11 @@ const gameObj = {
         localStorage.setItem('carData', JSON.stringify(this.car));
         localStorage.setItem('jobData', JSON.stringify(this.job));
     }
-    
 };
+
+//want to icorporate results of CRUSH, JOB, LOCATION, CAR into script. 
+//all values defined by object above
+//
 
 
 
