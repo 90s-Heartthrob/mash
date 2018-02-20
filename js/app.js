@@ -7,7 +7,7 @@
 
 
 const gameObj = {
-    masterArray: ['M', 'A', 'S', 'H'],
+    masterArray: [],
     mashArray: ['M', 'A', 'S', 'H'],
     crush: [],
     location: [],
@@ -23,26 +23,20 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-            
             for (let i = 0; i < crushArray.length; i++) {
                 gameObj.crush.push(crushArray[i]);
-                gameObj.masterArray.push(crushArray[i]);
                 gameObj.location.push(locationArray[i]);
-                gameObj.masterArray.push(locationArray[i]);
                 gameObj.car.push(carArray[i]);
-                gameObj.masterArray.push(carArray[i]);
                 gameObj.job.push(jobArray[i]);
-                gameObj.masterArray.push(jobArray[i]);
             }
+            gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
             gameObj.storeData();
             gameObj.cross();
         });
     },
     cross: function () {
-        
         let i = 1;
-        while (this.masterArray.length > 11) {
-            
+        while (this.masterArray.length > 0) {        
             const index = (i*this.tally)-i;
             const crossOff = this.masterArray[index];
             if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
@@ -75,8 +69,25 @@ const gameObj = {
                 this.masterArray.splice(masterArrayCrossIndex, 1);
                 this.job.splice(jobCrossIndex, 1);
                 console.log(this.job);
-            } else {
+            } else if (this.mashArray.length === 1) {
+                localStorage.setItem('houseData', JSON.stringify(this.mashArray[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+            } else if (this.crush.length === 1) {
+                localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
                 
+            } else if (this.location.length === 1) {
+                localStorage.setItem('locationData', JSON.stringify(this.location[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+
+            } else if (this.car.length === 1) {
+                localStorage.setItem('jobData', JSON.stringify(this.job[0]));
+                const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+                this.masterArray.splice(masterArrayCrossIndex, 1);
+            } else {
                 continue;
             }
             i++;
