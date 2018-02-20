@@ -21,7 +21,7 @@ const gameObj = {
             const locationArray = [this.location1.value, this.location2.value, this.location3.value];
             const carArray = [this.car1.value, this.car2.value, this.car3.value];
             const jobArray = [this.job1.value, this.job2.value, this.job3.value];
-            
+
             for (let i = 0; i < crushArray.length; i++) {
                 gameObj.crush.push(crushArray[i]);
                 gameObj.location.push(locationArray[i]);
@@ -32,16 +32,30 @@ const gameObj = {
         });
 
     },
-    
+
     storeData: function () {
         localStorage.setItem('crushData', JSON.stringify(this.crush));
         localStorage.setItem('locationData', JSON.stringify(this.location));
         localStorage.setItem('carData', JSON.stringify(this.car));
         localStorage.setItem('jobData', JSON.stringify(this.job));
     }
-    
+
 };
 
 
 
 gameObj.start();
+
+const testArray = ['M', 'A', 'S', 'H', 'C1', 'C2', 'C3', 'L1', 'L2', 'L3', 'V1', 'V2', 'V3', 'J1', 'J2', 'J3'];
+
+function cross () {
+    const num = 5;
+    for (let i = 1; i < 4; i++) {
+        // let i = 1;
+        const value = i * num - i;
+        testArray.splice(value , 1);
+    };
+    console.log(testArray);
+};
+
+cross();
