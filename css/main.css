@@ -2,16 +2,25 @@
     border: 1px solid black;
 } */
 
+body {
+    background-image: url(..//img/background.png);
+}
+
 header {
     height: fit-content;
     text-align: center;
     margin: 20px 50px 20px 50px;
 }
 
+header img {
+    width: 80%;
+}
+
 main {
     height: fit-content;
     text-align: center;
     margin: 20px 50px 20px 50px;
+    background-color: white;
 }
 
 
