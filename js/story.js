@@ -41,14 +41,15 @@ const story = {
 // } )
 
     getData: function () {
-        const getCrush = JSON.parse(localStorage.getItem('crushData'));
-        const getLocation = JSON.parse(localStorage.getItem('locationData'));
-        const getCar = JSON.parse(localStorage.getItem('carData'));
-        const getJob = JSON.parse(localStorage.getItem('jobData'));
-        const getHouse = JSON.parse(localStorage.getItem('houseData'));
+        this.crush = JSON.parse(localStorage.getItem('crushData'));
+        this.location = JSON.parse(localStorage.getItem('locationData'));
+        this.car = JSON.parse(localStorage.getItem('carData'));
+        this.job = JSON.parse(localStorage.getItem('jobData'));
+        this.house = JSON.parse(localStorage.getItem('houseData'));
     }
 };
 
+story.getData();
 story.populate();
 
 
