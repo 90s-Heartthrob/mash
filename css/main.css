@@ -3,26 +3,31 @@
 } */
 
 body {
+    background-color: rgba(0, 0, 0, 0.658);
     background-image: url(..//img/background.png);
     background-position: center;
+    /* background-size: 300%; */
 }
 
 header {
     height: fit-content;
     text-align: center;
-    margin: 20px 50px 20px 50px;
+    margin: 20px 15% 20px 15%;;
+    background-color: white;
+    border-radius: 10px;
 }
 
 header img {
-    width: 80%;
+    width: 60%;
 }
 
 main {
     height: fit-content;
     text-align: center;
-    margin: 20px 50px 20px 50px;
+    margin: 20px 15% 20px 15%;
     background-color: white;
     padding: 20px;
+    border-radius: 10px;
 }
 
 
