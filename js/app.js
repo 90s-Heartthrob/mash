@@ -1,11 +1,5 @@
 'use strict';
 
-// const crush = ['crush1', 'crush2', 'crush3'];
-// const location = ['location1', 'location2', 'location3'];
-// const car = ['uInput1', 'uInput2', 'uInput3',];
-// const job = ['uInput1', 'uInput2', 'uInput3'];
-
-
 const gameObj = {
     masterArray: [],
     mashArray: ['Mansion', 'Apartment', 'Shack', 'House'],
@@ -47,7 +41,7 @@ const gameObj = {
         localStorage.setItem('crushData', JSON.stringify(randomCrush));
         localStorage.setItem('locationData', JSON.stringify(randomLocation));
         localStorage.setItem('carData', JSON.stringify(randomCar));
-        localStorage.setItem('jobData', JSON.stringify(randomJob));     
+        localStorage.setItem('jobData', JSON.stringify(randomJob));
     }
 
     // cross: function () {
