@@ -8,7 +8,7 @@
 
 const gameObj = {
     masterArray: [],
-    mashArray: ['M', 'A', 'S', 'H'],
+    mashArray: ['Mansion', 'Apartment', 'Shack', 'House'],
     crush: [],
     location: [],
     car: [],
