@@ -28,6 +28,9 @@ const gameObj = {
 
             const futureButton = document.getElementById('future');
             futureButton.removeAttribute('class', 'hidden');
+
+            const spinner = document.getElementById('swirl');
+            spinner.setAttribute('class', 'spin');
         });
     },
     store: function () {
