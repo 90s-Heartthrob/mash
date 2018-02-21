@@ -50,9 +50,6 @@ const gameObj = {
         localStorage.setItem('jobData', JSON.stringify(randomJob));     
     }
 
-
-
-
     // cross: function () {
     //     while (this.masterArray.length > 0) {
     //         let i = 1;
