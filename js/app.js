@@ -25,7 +25,7 @@ const gameObj = {
             }
             gameObj.store();
             gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
-            
+
             const futureButton = document.getElementById('future');
             futureButton.removeAttribute('class', 'hidden');
         });

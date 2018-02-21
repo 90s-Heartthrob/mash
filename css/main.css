@@ -1,3 +1,20 @@
+/* * {
+    border: 1px solid black;
+} */
+
+header {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+main {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+
 #swirl {
     block-size: 4in;
     display: block;
@@ -6,12 +23,21 @@
     padding: 40px;
 }
 
-<<<<<<< HEAD
 #how-to-play{
-    width: 60%;
+    width: fit-content;
 }
-=======
-#future.hidden {
+
+.hidden {
     display: none;
 }
->>>>>>> 47263416f3b8648a4c1b19393fa9d8709c2d97af
+
+.button {
+    display: contents;
+    text-decoration: none;
+    background-color: rgb(233, 105, 0);
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
