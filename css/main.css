@@ -4,6 +4,7 @@
 
 body {
     background-image: url(..//img/background.png);
+    background-position: center;
 }
 
 header {
@@ -21,6 +22,7 @@ main {
     text-align: center;
     margin: 20px 50px 20px 50px;
     background-color: white;
+    padding: 20px;
 }
 
 
@@ -44,7 +46,7 @@ button, a {
     margin: 15px auto;
     display: contents;
     text-decoration: none;
-    background-color: rgb(233, 105, 0);
+    background-color: rgb(64, 177, 149);
     padding: 7px 10px;
     color: white;
     font-weight: bold;
