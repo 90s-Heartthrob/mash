@@ -31,7 +31,8 @@ main {
     display: none;
 }
 
-.button {
+button, a {
+    margin: 15px auto;
     display: contents;
     text-decoration: none;
     background-color: rgb(233, 105, 0);
