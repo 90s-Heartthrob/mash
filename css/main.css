@@ -5,3 +5,7 @@
     margin-right: auto;
     padding: 40px;
 }
+
+#future.hidden {
+    display: none;
+}
