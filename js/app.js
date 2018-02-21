@@ -29,81 +29,98 @@ const gameObj = {
                 gameObj.car.push(carArray[i]);
                 gameObj.job.push(jobArray[i]);
             }
+            gameObj.store();
             gameObj.masterArray = gameObj.masterArray.concat(gameObj.mashArray, gameObj.crush, gameObj.job, gameObj.location, gameObj.car);
-            gameObj.cross();
         });
     },
-    cross: function () {
-        while (this.masterArray.length > 0) {
-            let i = 1;
-            const index = (i * this.tally) - i;
-            const crossOff = this.masterArray[index];
-            while (index < this.masterArray.length) {
-                if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    const mashArrayCrossIndex = this.mashArray.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    this.mashArray.splice(mashArrayCrossIndex, 1);
-                    i++;
-                    console.log(this.mashArray);
-                } else if (this.crush.includes(crossOff) && this.crush.length > 1) {
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    const crushCrossIndex = this.crush.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    this.crush.splice(crushCrossIndex, 1);
-                    i++;
-                    console.log(this.crush);
-                } else if (this.location.includes(crossOff) && this.location.length > 1) {
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    const locationCrossIndex = this.location.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    this.location.splice(locationCrossIndex, 1);
-                    i++;
-                    console.log(this.location);
-                } else if (this.car.includes(crossOff) && this.car.length > 1) {
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    const carCrossIndex = this.car.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    this.car.splice(carCrossIndex, 1);
-                    i++;
-                    console.log(this.car);
-                } else if (this.job.includes(crossOff) && this.job.length > 1) {
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    const jobCrossIndex = this.job.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    this.job.splice(jobCrossIndex, 1);
-                    i++;
-                    console.log(this.job);
-                } else if (this.mashArray.length === 1 && this.masterArray.includes(this.mash[0])) {
-                    localStorage.setItem('houseData', JSON.stringify(this.mashArray[0]));
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    i++;
-                } else if (this.crush.length === 1 && this.masterArray.includes(this.crush[0])) {
-                    localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    i++;
-
-                } else if (this.location.length === 1 && this.masterArray.includes(this.location[0])) {
-                    localStorage.setItem('locationData', JSON.stringify(this.location[0]));
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    i++;
-
-                } else if (this.car.length === 1 && this.masterArray.includes(this.car[0])) {
-                    localStorage.setItem('carData', JSON.stringify(this.car[0]));
-                    const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
-                    this.masterArray.splice(masterArrayCrossIndex, 1);
-                    i++;
-
-                } else {
-                    i = 1;
-                }
-                console.log(gameObj.masterArray);
-            };
-        }
+    store: function () {
+        const randomNumber = function() {
+            const randNum = Math.floor(Math.random() * (3));
+            return randNum;
+        };
+        const randomHouse = this.mashArray[randomNumber()];
+        const randomCrush = this.crush[randomNumber()];
+        const randomLocation = this.location[randomNumber()];
+        const randomCar = this.car[randomNumber()];
+        const randomJob = this.job[randomNumber()];
+        localStorage.setItem('houseData', JSON.stringify(randomHouse));
+        localStorage.setItem('crushData', JSON.stringify(randomCrush));
+        localStorage.setItem('locationData', JSON.stringify(randomLocation));
+        localStorage.setItem('carData', JSON.stringify(randomCar));
+        localStorage.setItem('jobData', JSON.stringify(randomJob));     
     }
+
+    // cross: function () {
+    //     while (this.masterArray.length > 0) {
+    //         let i = 1;
+    //         const index = (i * this.tally) - i;
+    //         const crossOff = this.masterArray[index];
+    //         while (index < this.masterArray.length) {
+    //             if (this.mashArray.includes(crossOff) && this.mashArray.length > 1) {
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 const mashArrayCrossIndex = this.mashArray.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 this.mashArray.splice(mashArrayCrossIndex, 1);
+    //                 i++;
+    //                 console.log(this.mashArray);
+    //             } else if (this.crush.includes(crossOff) && this.crush.length > 1) {
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 const crushCrossIndex = this.crush.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 this.crush.splice(crushCrossIndex, 1);
+    //                 i++;
+    //                 console.log(this.crush);
+    //             } else if (this.location.includes(crossOff) && this.location.length > 1) {
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 const locationCrossIndex = this.location.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 this.location.splice(locationCrossIndex, 1);
+    //                 i++;
+    //                 console.log(this.location);
+    //             } else if (this.car.includes(crossOff) && this.car.length > 1) {
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 const carCrossIndex = this.car.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 this.car.splice(carCrossIndex, 1);
+    //                 i++;
+    //                 console.log(this.car);
+    //             } else if (this.job.includes(crossOff) && this.job.length > 1) {
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 const jobCrossIndex = this.job.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 this.job.splice(jobCrossIndex, 1);
+    //                 i++;
+    //                 console.log(this.job);
+    //             } else if (this.mashArray.length === 1 && this.masterArray.includes(this.mash[0])) {
+    //                 localStorage.setItem('houseData', JSON.stringify(this.mashArray[0]));
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 i++;
+    //             } else if (this.crush.length === 1 && this.masterArray.includes(this.crush[0])) {
+    //                 localStorage.setItem('crushData', JSON.stringify(this.crush[0]));
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 i++;
+
+    //             } else if (this.location.length === 1 && this.masterArray.includes(this.location[0])) {
+    //                 localStorage.setItem('locationData', JSON.stringify(this.location[0]));
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 i++;
+
+    //             } else if (this.car.length === 1 && this.masterArray.includes(this.car[0])) {
+    //                 localStorage.setItem('jobData', JSON.stringify(this.job[0]));
+    //                 const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
+    //                 this.masterArray.splice(masterArrayCrossIndex, 1);
+    //                 i++;
+
+    //             } else {
+    //                 i = 1;
+    //             }
+    //             console.log(gameObj.masterArray);
+    //         };
+    //     }
 };
+
 
 gameObj.start();
