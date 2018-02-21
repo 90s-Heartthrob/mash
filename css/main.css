@@ -1,3 +1,20 @@
+/* * {
+    border: 1px solid black;
+} */
+
+header {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+main {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+
 #swirl {
     block-size: 4in;
     display: block;
@@ -7,9 +24,19 @@
 }
 
 #how-to-play{
-    width: 60%;
+    width: fit-content;
 }
 
-#future.hidden {
+.button {
+    display: contents;
+    text-decoration: none;
+    background-color: rgb(233, 105, 0);
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hidden {
     display: none;
 }
