@@ -35,14 +35,17 @@ const story = {
             const summaryOne = 'I guess you chose ' + this.crush + '. Which is cool. Not so bad as you live in a ' + this.house + ' in ' + this.location + '. Have a functional & sensible ' + this.car + '. You also work as a ' + this.job + '.';
             p.textContent = summaryOne;
             story1.appendChild(p);
+            localStorage.setItem('pastStory', JSON.stringify(summaryOne));
         } else if (num === 2) {
             const summaryTwo = 'OH NO!! You married ' + this.crush + '. You baught & live in a' + this.house + ' in ' + this.location + '. Also have to drive a ' + this.car + ', to your damn job as a ' + this.job + '.';
             p.textContent = summaryTwo;
             story1.appendChild(p);
+            localStorage.setItem('pastStory', JSON.stringify(summaryTwo));
         } else {
             const summaryThree = 'Oh yeah you end up with ' + this.crush + '. When you\'re not working you spend you time at home in a ' + this.house + ' in ' + this.location + '. Also get to drive your ' + this.car + '. Which is the best way to get to work where you\'re a ' + this.job + '.';
             p.textContent = summaryThree;
             story1.appendChild(p);
+            localStorage.setItem('pastStory', JSON.stringify(summaryThree));
         }
     }
 };
