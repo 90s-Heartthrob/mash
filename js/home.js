@@ -12,5 +12,6 @@ if (localStorage.getItem('pastStory')) {
         const p = document.createElement('p');
         p.textContent = pastStory;
         storySection.appendChild(p);
+        button.remove();
     })
 }
