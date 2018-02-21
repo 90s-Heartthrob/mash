@@ -92,7 +92,7 @@ const gameObj = {
                     i++;
 
                 } else if (this.car.length === 1 && this.masterArray.includes(this.car[0])) {
-                    localStorage.setItem('jobData', JSON.stringify(this.job[0]));
+                    localStorage.setItem('carData', JSON.stringify(this.car[0]));
                     const masterArrayCrossIndex = this.masterArray.indexOf(crossOff);
                     this.masterArray.splice(masterArrayCrossIndex, 1);
                     i++;
