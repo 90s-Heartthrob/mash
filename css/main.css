@@ -35,26 +35,28 @@ main {
 
 footer{
     background-color: rgb(64, 177, 149);
-    padding-top: 8px;
     color: white;
     font-family: 'Kalam', sans-serif;
-    border-radius: 5px;
     position: fixed;
     bottom: 0px;
     width: 100%;
-    display: inline-flex;
 }
 #mini_logo{
-    max-height: fit-content;
-    align-content: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 #foot{
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right:10px;
-    display: inline-flex;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+ul{
+    margin-top:6px;
+    margin-bottom:2px;
+    padding-bottom: 0px;
 }
 
 #swirl {
