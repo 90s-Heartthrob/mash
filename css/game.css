@@ -1,0 +1,27 @@
+
+
+input {
+    display: block;
+    margin-top: 10px;
+    border: none;
+    border-bottom: solid 1px rgb(151, 151, 151);
+}
+#game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    filter: drop-shadow(15px 15px 1px black);
+    margin-bottom: 40px;
+    border: 2px solid black;
+
+}
+
+header img {
+    max-width: 900px;
+}
