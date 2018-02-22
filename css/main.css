@@ -31,9 +31,20 @@ main {
     border-radius: 10px;
     max-width: 900px;
     margin: 0 auto;
-    filter: drop-shadow(15px 15px 1px black);
+    filter: drop-shadow(15px 15px 0px black);
     margin-bottom: 40px;
     border: 2px solid black;
+}
+footer{
+    background-color: rgb(64, 177, 149);
+    padding-top: 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 #swirl {
@@ -87,3 +98,5 @@ button, a {
 #future {
     z-index: 2;
 }
+
+
