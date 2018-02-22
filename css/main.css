@@ -19,6 +19,7 @@ header {
 
 header img {
     width: 60%;
+    margin: 50px auto;
 }
 
 main {
@@ -28,8 +29,12 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    filter: drop-shadow(15px 15px 1px black);
+    margin-bottom: 40px;
+    border: 2px solid black;
 }
-
 
 #swirl {
     block-size: 4in;
@@ -37,6 +42,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+    z-index: 1;
 }
 
 #how-to-play{
@@ -58,6 +64,13 @@ button, a {
     border-radius: 5px;
 }
 
+#header {
+    margin: auto;
+    text-decoration: none;
+    background-color: white;
+    padding: 0;
+}
+
 .spin {
     -webkit-animation: rotation 2s infinite linear;
 }
@@ -71,3 +84,6 @@ button, a {
     }
 }
 
+#future {
+    z-index: 2;
+}
