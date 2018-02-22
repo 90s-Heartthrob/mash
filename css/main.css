@@ -1,0 +1,73 @@
+/* * {
+    border: 1px solid black;
+} */
+
+body {
+    background-color: rgba(0, 0, 0, 0.658);
+    background-image: url(..//img/background.png);
+    background-position: center;
+    /* background-size: 300%; */
+}
+
+header {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 15% 20px 15%;;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header img {
+    width: 60%;
+}
+
+main {
+    height: fit-content;
+    text-align: center;
+    margin: 20px 15% 20px 15%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#swirl {
+    block-size: 4in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+#how-to-play{
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
+button, a {
+    margin: 15px auto;
+    display: contents;
+    text-decoration: none;
+    background-color: rgb(64, 177, 149);
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.spin {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
