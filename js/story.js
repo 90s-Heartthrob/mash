@@ -36,16 +36,31 @@ const story = {
             p.textContent = summaryOne;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryOne));
+            const audio = document.createElement('audio');
+            audio.setAttribute('src', 'music/story1.mp3');
+            audio.setAttribute('autoplay', '');
+            story1.appendChild(audio);
+            audio.style.display = 'none';
         } else if (num === 2) {
             const summaryTwo = 'OH NO!! You married ' + this.crush + '. You bought & live in a ' + this.house + ' in ' + this.location + '. Also have to drive a ' + this.car + ', to your damn job as a ' + this.job + '.';
             p.textContent = summaryTwo;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryTwo));
+            const audio = document.createElement('audio');
+            audio.setAttribute('src', 'music/story2.mp3');
+            audio.setAttribute('autoplay', '');
+            story1.appendChild(audio);
+            audio.style.display = 'none';
         } else {
             const summaryThree = 'Oh yeah you end up with ' + this.crush + '. When you\'re not working you spend you time at home in a ' + this.house + ' in ' + this.location + '. Also get to drive your ' + this.car + '. Which is the best way to get to work where you\'re a ' + this.job + '.';
             p.textContent = summaryThree;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryThree));
+            const audio = document.createElement('audio');
+            audio.setAttribute('src', 'music/story3.mp3');
+            audio.setAttribute('autoplay', '');
+            story1.appendChild(audio);
+            audio.style.display = 'none';
         }
     }
 };
