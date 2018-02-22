@@ -37,7 +37,7 @@ const story = {
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryOne));
         } else if (num === 2) {
-            const summaryTwo = 'OH NO!! You married ' + this.crush + '. You baught & live in a' + this.house + ' in ' + this.location + '. Also have to drive a ' + this.car + ', to your damn job as a ' + this.job + '.';
+            const summaryTwo = 'OH NO!! You married ' + this.crush + '. You bought & live in a ' + this.house + ' in ' + this.location + '. Also have to drive a ' + this.car + ', to your damn job as a ' + this.job + '.';
             p.textContent = summaryTwo;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryTwo));

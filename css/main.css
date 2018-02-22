@@ -102,6 +102,8 @@ button {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
 input {
     font-family: 'Kalam', sans-serif;
 }
