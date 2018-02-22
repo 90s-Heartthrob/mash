@@ -59,7 +59,7 @@ ul{
     margin-bottom:2px;
     padding-bottom: 0px;
 }
-.test{
+.listlink{
     padding-top: 5px;
 }
 
@@ -136,4 +136,8 @@ p {
     margin: auto;
     margin-bottom: 15px;
     line-height: 20px;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
 }
