@@ -1,5 +1,4 @@
 body {
-    /* background-color: rgba(0, 0, 0, 0.658); */
     background-image: url(..//img/background.png);
     background-position: center;
     background-size: 200%; 
@@ -19,7 +18,6 @@ header {
 header img {
     width: 100%;
     margin: 50px 0px;
-    /* filter: hue-rotate(90deg); */
 }
 
 main {
@@ -44,18 +42,25 @@ footer{
     left:0px;
     right:0px;
 }
+
 #mini_logo{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+#mini_logo:hover {
+    transform: scale(1.07);
+    /* transition-duration: 1s; */
+}
+
 #foot{
     justify-content: center;
     display: flex;
     align-content: center;
     padding-top: 0px;
     padding-bottom: 0px;
-
 }
+
 ul{
     margin-top:6px;
     margin-bottom:2px;
@@ -128,7 +133,15 @@ textarea:focus, input:focus{
 }
 
 input {
+    display: block;
+    margin-top: 10px;
+    border: none;
+    border-bottom: solid 1px rgb(151, 151, 151);
     font-family: 'Kalam', sans-serif;
+}
+
+input:focus {
+    color: rgb(44, 94, 204);
 }
 
 
@@ -147,4 +160,19 @@ p {
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+fieldset {
+    padding-top: 20px;
+}
+
+#future {
+    margin-top: 20px;
 }
