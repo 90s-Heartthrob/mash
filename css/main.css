@@ -20,6 +20,7 @@ header {
 header img {
     width: 70%;
     margin: 50px auto;
+    /* filter: hue-rotate(90deg); */
 }
 
 main {
@@ -64,7 +65,7 @@ footer{
     display: none;
 }
 
-button, a {
+button {
     margin: 15px auto;
     display: contents;
     text-decoration: none;
@@ -75,12 +76,12 @@ button, a {
     border-radius: 5px;
 }
 
-#header {
+/* #header {
     margin: auto;
     text-decoration: none;
     background-color: white;
     padding: 0;
-}
+} */
 
 .spin {
     -webkit-animation: rotation 2s infinite linear;
@@ -95,10 +96,12 @@ button, a {
     }
 }
 
-#future {
-    z-index: 2;
+#future-button {
+    margin-top: 60px;
 }
 
+textarea:focus, input:focus{
+    outline: none;
 input {
     font-family: 'Kalam', sans-serif;
 }
