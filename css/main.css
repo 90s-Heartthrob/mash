@@ -107,3 +107,16 @@ label {
     font-weight: bold;
     font-size: 130%;
 }
+
+h2 {
+    font-family: 'Kalam', sans-serif;
+    font-size: 200%;
+    margin: 10px auto;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
