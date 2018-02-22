@@ -6,15 +6,16 @@ body {
     /* background-color: rgba(0, 0, 0, 0.658); */
     background-image: url(..//img/background.png);
     background-position: center;
-    /* background-size: 300%; */
+    background-size: 200%; 
 }
 
 header {
-    height: fit-content;
+
     text-align: center;
-    margin: 20px 15% 10px 15%;;
+    margin: 10px 10% 10px 15%;;
     background-color: none;
     border-radius: 10px;
+    block-size: 100%;
 }
 
 header img {
