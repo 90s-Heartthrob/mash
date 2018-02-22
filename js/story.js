@@ -66,24 +66,3 @@ const story = {
 };
 
 story.populate();
-
-// key = pastStory
-
-
-
-// const story1 = document.getElementById('story');
-// story1.textContent = summaryOne;
-
-// const story2 = document.getElementById('story');
-// story1.textContent = summaryTwo;
-
-// const story3 = document.getElementById('story');
-// story1.textContent = summaryThree;
-
-// story1.addEventListener('click', function() {
-//     this.style.color = 'red'
-// } )
-
-
-
-
