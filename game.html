@@ -7,36 +7,40 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/game.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <title>Game</title>
 </head>
 <body>
     <header>
-        <img src="img/header.png" alt="MASH Header">
+        <a href="index.html">
+            <img src="img/LOGO_mix.png" alt="MASH Header" id='header'>
+        </a>
     </header>
     <main>
         <form>
             <fieldset>
                 <section id="game">
                 <section id="crush">
-                    <label for="crush">Crush</label>
+                    <label for="crush"><h2>Crush</h2></label>
                     <input type="text" name="crush1">
                     <input type="text" name="crush2">
                     <input type="text" name="crush3">
                 </section>
                 <section id="job">
-                    <label for="job">Job</label>
+                    <label for="job"><h2>Job</h2></label>
                     <input type="text" name="job1"> 
                     <input type="text" name="job2">
                     <input type="text" name="job3">
                 </section>
                 <section id="location">
-                    <label for="location">Location</label>
+                    <label for="location"><h2>Location</h2></label>
                     <input type="text" name="location1">
                     <input type="text" name="location2">
                     <input type="text" name="location3">
                 </section>
                 <section id="car">
-                    <label for="car">Car</label>
+                    <label for="car"><h2>Car</h2></label>
                     <input type="text" name="car1">
                     <input type="text" name="car2">
                     <input type="text" name="car3">
@@ -46,8 +50,16 @@
             </fieldset>
             <img id = "swirl" src="img/swirl.png" alt="Swirling Symbol">
         </form>
-        <a href="story.html" id="future" class="hidden">Find out your future</a>
+        <a href="story.html" id="future" class="hidden"><button type="button" id="future-button">Find out your future</button></a>
     </main>
+    <footer>
+            <section id = "foot">
+                    <ul class = "listlink"><a href="https://www.youtube.com/watch?v=96oiK7FaAGY">Music</a></ul>
+                    <ul class = "listlink"><a href="https://www.buzzfeed.com/briangalindo/31-awesome-90s-toys-you-never-got-but-can-totally-buy-today?utm_term=.osXa5xzPOx#.ogy0RqeWzq">Toys</a></ul>
+                    <ul><a href="index.html"><img src = "img/mini_logo-01.png" id = "mini_logo"></a></ul>
+                    <ul class = "listlink"><a href="https://www.youtube.com/watch?v=1nCqRmx3Dnw">News</a></ul>
+                    <ul class = "listlink"><a href="https://www.youtube.com/watch?v=rCwn1NTK-50">Style</a></ul>
+                </section>
 </body>
 <script src="js/app.js"></script>
 </html>

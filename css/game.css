@@ -1,4 +1,6 @@
-
+fieldset {
+    padding-top: 20px;
+}
 
 input {
     display: block;
@@ -13,15 +15,6 @@ input {
     justify-content: space-around;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    filter: drop-shadow(15px 15px 1px black);
-    margin-bottom: 40px;
-    border: 2px solid black;
-
-}
-
-header img {
-    max-width: 900px;
+#future {
+    margin-top: 20px;
 }
