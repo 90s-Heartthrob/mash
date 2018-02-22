@@ -42,6 +42,8 @@ footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
+    left:0px;
+    right:0px;
 }
 #mini_logo{
     padding-left: 20px;
