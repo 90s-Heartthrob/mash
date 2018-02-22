@@ -3,7 +3,7 @@
 } */
 
 body {
-    background-color: rgba(0, 0, 0, 0.658);
+    /* background-color: rgba(0, 0, 0, 0.658); */
     background-image: url(..//img/background.png);
     background-position: center;
     /* background-size: 300%; */
@@ -12,13 +12,13 @@ body {
 header {
     height: fit-content;
     text-align: center;
-    margin: 20px 15% 20px 15%;;
-    background-color: white;
+    margin: 20px 15% 10px 15%;;
+    background-color: none;
     border-radius: 10px;
 }
 
 header img {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
 }
 
@@ -86,4 +86,14 @@ button, a {
 
 #future {
     z-index: 2;
+}
+
+input {
+    font-family: 'Kalam', sans-serif;
+}
+
+label {
+    font-family: 'Kalam', sans-serif;
+    font-weight: bold;
+    font-size: 130%;
 }
