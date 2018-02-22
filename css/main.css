@@ -137,3 +137,7 @@ p {
     margin-bottom: 15px;
     line-height: 20px;
 }
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
