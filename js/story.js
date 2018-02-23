@@ -32,7 +32,7 @@ const story = {
         const p = document.createElement('p');
 
         if (num === 1) {
-            const summaryOne = 'I guess you chose ' + this.crush + '. Which is cool. Not so bad as you live in a ' + this.house + ' in ' + this.location + '. Have a functional & sensible ' + this.car + '. You also work as a ' + this.job + '.';
+            const summaryOne = 'So you ended up with ' + this.crush + ', whatever. Which is cool, I guess. Not so bad as you live in a ' + this.house + ' in ' + this.location + '. You get to and from your job as a '  + this.job + ' via a functional & sensible ' + this.car + '.';
             p.textContent = summaryOne;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryOne));
@@ -42,7 +42,7 @@ const story = {
             story1.appendChild(audio);
             audio.style.display = 'none';
         } else if (num === 2) {
-            const summaryTwo = 'OH NO!! You married ' + this.crush + '. You bought & live in a ' + this.house + ' in ' + this.location + '. Also have to drive a ' + this.car + ', to your damn job as a ' + this.job + '.';
+            const summaryTwo = 'I got some bad news, you married ' + this.crush + '. You bought and live in a ' + this.house + ' with no windows, but at least you live in ' + this.location + '. Every day you get around in a ' + this.car + ', which always breaks down on your way to your damn job as a ' + this.job + '.';
             p.textContent = summaryTwo;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryTwo));
@@ -52,7 +52,7 @@ const story = {
             story1.appendChild(audio);
             audio.style.display = 'none';
         } else {
-            const summaryThree = 'Oh yeah you end up with ' + this.crush + '. When you\'re not working you spend you time at home in a ' + this.house + ' in ' + this.location + '. Also get to drive your ' + this.car + '. Which is the best way to get to work where you\'re a ' + this.job + '.';
+            const summaryThree = 'Oh yeah you end up with ' + this.crush + '! Congrats! When you\'re not working you spend you time at home in a three story ' + this.house + ' in ' + this.location + '. You cruise around town in your ' + this.car + '. Which is the best way to you\'re dream job as a ' + this.job + '.';
             p.textContent = summaryThree;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryThree));
