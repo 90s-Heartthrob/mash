@@ -10,6 +10,10 @@ header {
     padding: 0px 15%;
 }
 
+#header {
+    transition-duration: 1s;
+}
+
 #header:hover {
     transform: scale(1.1);
     transition-duration: 1s;
