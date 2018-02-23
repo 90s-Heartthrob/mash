@@ -1,11 +1,11 @@
 'use strict';
 
 const story = {
-    house: 'home',
-    crush: 'You',
-    location: 'here',
-    car: 'bike',
-    job: 'Dev',
+    house: ' ',
+    crush: ' ',
+    location: ' ',
+    car: ' ',
+    job: ' ',
 
     getData: function () {
         this.crush = JSON.parse(localStorage.getItem('crushData'));
