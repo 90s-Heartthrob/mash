@@ -52,7 +52,7 @@ const story = {
             story1.appendChild(audio);
             audio.style.display = 'none';
         } else {
-            const summaryThree = 'Oh yeah you end up with ' + this.crush + '! Congrats! When you\'re not working you spend you time at home in a three story ' + this.house + ' in ' + this.location + '. You cruise around town in your ' + this.car + '. Which is the best way to you\'re dream job as a ' + this.job + '.';
+            const summaryThree = 'Oh yeah you end up with ' + this.crush + '! Congrats! When you\'re not working you spend you time at home in a three story ' + this.house + ' in ' + this.location + '. You cruise around town in your ' + this.car + '. Which is the best way to your dream job as a ' + this.job + '.';
             p.textContent = summaryThree;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryThree));
