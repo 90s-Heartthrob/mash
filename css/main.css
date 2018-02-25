@@ -36,7 +36,7 @@ main {
     filter: drop-shadow(15px 15px 0px black);
 }
 
-footer{
+footer {
     background-color: rgb(64, 177, 149);
     color: white;
     font-family: 'Kalam', sans-serif;
@@ -47,17 +47,17 @@ footer{
     right:0px;
 }
 
-#mini_logo{
+#mini-logo {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#mini_logo:hover {
+#mini-logo:hover {
     transform: scale(1.07);
     /* transition-duration: 1s; */
 }
 
-#foot{
+#foot {
     justify-content: center;
     display: flex;
     align-content: center;
@@ -65,11 +65,12 @@ footer{
     padding-bottom: 0px;
 }
 
-ul{
+ul {
     margin-top:6px;
     margin-bottom:2px;
     padding-bottom: 0px;
 }
+
 .listlink {
     padding-top: 5px;
 }
@@ -88,7 +89,7 @@ ul{
     z-index: 1;
 }
 
-#how-to-play{
+#how-to-play {
     width: fit-content;
 }
 
@@ -132,7 +133,7 @@ button:hover {
     margin-top: 60px;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline: none;
 }
 
@@ -161,6 +162,7 @@ p {
     margin-bottom: 15px;
     line-height: 20px;
 }
+
 a {
     text-decoration: inherit;
     color: inherit;
