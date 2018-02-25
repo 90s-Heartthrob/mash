@@ -14,3 +14,6 @@ CSS
 JS
 - See notes in the files themselves!
 - Great job at keeping things neat and clean. It was super easy to glance through your files to get an overview of what each method was doing, then dig in as needed.
+
+HTML
+- Good job! There were some inconsistences around indentation, spacing around `=` signs, and y'all misused the `<ul>` tags. Other than that, looks good! See the files themselves for other notes.
