@@ -16,6 +16,11 @@ const story = {
     },
 
     getRandomInt: function() {
+        /*
+            You already defined a function that does the same thing in app.js
+            how could you write this once and use it all over?
+            answer: store it in a separate js file that is included in all HTML files that need it
+        */
         const min = Math.ceil(1);
         const max = Math.floor(3);
         const randomNumer = Math.floor(Math.random() * (max - min + 1)) + min;;
@@ -26,7 +31,6 @@ const story = {
         story.getData();
 
         const num = this.getRandomInt();
-        console.log(num);
 
         const story1 = document.getElementById('story');
         const p = document.createElement('p');
@@ -36,6 +40,11 @@ const story = {
             p.textContent = summaryOne;
             story1.appendChild(p);
             localStorage.setItem('pastStory', JSON.stringify(summaryOne));
+            /* 
+                This is another instance where we would put this audio tag in our HTML - since we know we need it there!
+                That way, we don't need to create, append, or add that autoplay attribute here.
+                The only thing we'd need to do is dynamically alter its source.
+            */
             const audio = document.createElement('audio');
             audio.setAttribute('src', 'music/story1.mp3');
             audio.setAttribute('autoplay', '');

@@ -12,4 +12,5 @@ CSS
 - It was fairly easy to follow along with your class names and IDs, but one suggestion I have for further improving readability and understanding is to group your blocks of rules and use comments to describe what they're applying to. For example, grouping together all the form styles, or the landing page styles and giving them comment headers.
 
 JS
-- 
+- See notes in the files themselves!
+- Great job at keeping things neat and clean. It was super easy to glance through your files to get an overview of what each method was doing, then dig in as needed.
