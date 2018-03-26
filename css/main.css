@@ -96,9 +96,9 @@ ul{
     display: none;
 }
 
-button a {
+button {
     margin: 15px auto;
-    display: contents;
+    /* display: contents; */
     text-decoration: none;
     background-color: rgb(64, 177, 149);
     padding: 7px 10px;
