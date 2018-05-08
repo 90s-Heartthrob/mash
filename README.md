@@ -29,3 +29,6 @@ We're looking to tap into the deep rooted nostalgia of the 90s kids who are grow
 ## Classic Mash
 ### Categories
 Crush, Car, Location, Job
+
+## Site URL
+https://stephaniesmith.github.io/mash/
